@@ -1,4 +1,4 @@
-## Aula 1: Explore as áreas do desenvolvimento
+# 📝 Aula 1: Explore as áreas do desenvolvimento
 
 ## Topicos abordados na aula
 
@@ -10,7 +10,7 @@
 
 ## Conteudo
 
-<img src="../Img/contexto.png" alt="imagem representando conceito de servidores" />
+<img src="../Img/contexto.png" alt="Introdução" />
 
 | **Front-end**                                                                                                                         | **Back-end**                                                                                                            | **Full-stack**                         |
 | ------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | -------------------------------------- |
