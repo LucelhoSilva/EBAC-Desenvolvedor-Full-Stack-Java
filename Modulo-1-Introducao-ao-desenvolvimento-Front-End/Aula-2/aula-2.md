@@ -1,6 +1,6 @@
-## Aula 2: Entenda o mercado de trabalho
+# 📝 Aula 2: Entenda o mercado de trabalho
 
-## topicos abordados na aula
+## Topicos abordados na aula
 
 - [x] Analisar a demanda e desafios do mercado de desenvolvimento Front-End;
 - [x] Explorar as diversas oportunidades de carreira no mercado de desenvolvimento Front-End;
