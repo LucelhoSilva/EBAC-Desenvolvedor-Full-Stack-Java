@@ -42,4 +42,29 @@ $(document).ready(function() {
           `);
         });
       });
+});
+    
+$(document).ready(function() {
+    $('.botao-menu button').click(function() {
+        $('.menu').slideToggle();
     });
+
+    // Carregar os produtos do arquivo JSON
+    $.getJSON("./assets/data/produtos.json", function(produtosData) {
+        // Função para adicionar produtos ao container
+        function adicionarProdutos(produtos) {
+            produtos.forEach(produto => {
+                const produtoHTML = `
+                    <div class="produto">
+                        <img src="${produto.imagem}" alt="${produto.nome}">
+                        <button>${produto.nome}</button>
+                    </div>
+                `;
+                $(".produtos-container").append(produtoHTML);
+            });
+        }
+
+        // Chamar a função para adicionar produtos ao carregar o JSON
+        adicionarProdutos(produtosData.produtos);
+    });
+});
