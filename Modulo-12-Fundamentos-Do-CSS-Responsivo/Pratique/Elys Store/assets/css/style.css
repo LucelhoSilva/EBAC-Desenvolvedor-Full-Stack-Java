@@ -1,0 +1,307 @@
+/* Reset básico */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Estilo do corpo */
+body {
+  background-color: #f5f5f5;
+  overflow-x: hidden;
+}
+
+/* Container de cabeçalho */
+.container-header {
+  background: #040836;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 100vw;
+}
+
+/* Título no cabeçalho */
+.container-header .titulo a {
+  color: white;
+  font-size: 35px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.container-header .titulo a span {
+  color: #2d00d1;
+  transition: all 0.3s ease;
+}
+
+/* Linha no cabeçalho */
+.line {
+  border-bottom: 0.1rem solid white;
+  width: 100vw;
+}
+
+/* Barra de navegação */
+.navBar {
+  background-color: #091181;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.navBar ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0.8rem;
+}
+
+.navBar li a {
+  padding: 0.3rem;
+  color: #a7b1bd;
+  cursor: pointer;
+  position: relative;
+  transition: 0.5s all ease-in-out;
+}
+
+.navBar li a:hover {
+  color: #777777;
+  transition: 0.5s all ease-in-out;
+}
+
+.navBar a::after {
+  content: " ";
+  width: 0%;
+  height: 0.6vh;
+  background-color: #ffffff;
+  position: absolute;
+  transition: 0.5s ease-in-out;
+}
+
+.navBar a:hover::after {
+  width: 100%;
+  border-radius: 25px;
+}
+
+/* Botão de menu para dispositivos móveis */
+.checkBtn {
+  display: none;
+  cursor: pointer;
+}
+
+#check {
+  display: none;
+}
+
+/* Container principal */
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+/* Estilo do menu */
+.menu ul li {
+  display: inline;
+  padding-left: 1em;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+/* Seção "Sobre a Loja" */
+#sobre-a-loja {
+  display: flex;
+  margin: 50px 0;
+}
+
+#sobre-a-loja img {
+  max-width: 360px;
+  width: 100%;
+}
+
+#sobre-a-loja div {
+  margin-left: 50px;
+}
+
+#sobre-a-loja p {
+  margin-top: 2em;
+  font-weight: 300;
+}
+
+h2 {
+  font-style: italic;
+  padding-bottom: 0.8em;
+  border-bottom: 2px solid;
+  color: #3f78d3;
+}
+
+/* Seção de produtos */
+.item-produtos {
+  display: grid;
+  grid-template-columns: repeat(4, 24.25%);
+  column-gap: 1%;
+}
+
+/* Estilo dos produtos */
+.tenis {
+  margin-top: 50px;
+}
+
+.tenis div img {
+  max-width: 360px;
+  width: 100%;
+}
+
+.tenis h3 {
+  padding-top: 40px;
+}
+
+.tenis p {
+  font-weight: 300;
+  padding: 20px 0;
+}
+
+.tenis button {
+  width: 100%;
+  height: 38px;
+  font-size: 17px;
+  color: #fff;
+  background-color: rgb(63, 120, 211);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tenis button:hover {
+  background-color: rgb(50, 100, 200);
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+  .container {
+    max-width: 80%;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  #sobre-a-loja {
+    display: block;
+  }
+
+  #sobre-a-loja img {
+    max-width: 1080px;
+    width: 100%;
+  }
+
+  #sobre-a-loja div {
+    margin-left: 0;
+  }
+
+  h2 {
+    margin-top: 40px;
+  }
+
+  .item-produtos {
+    grid-template-columns: repeat(2, 49.5%);
+  }
+
+  .tenis div img {
+    max-width: 1080px;
+  }
+}
+
+@media screen and (orientation: portrait) and (max-width: 640px) {
+  .container {
+    max-width: 80%;
+    width: 100%;
+  }
+
+  #sobre-a-loja {
+    display: block;
+  }
+
+  #sobre-a-loja div {
+    margin-left: 0;
+  }
+
+  #sobre-a-loja img {
+    max-width: 100%;
+  }
+
+  h2 {
+    margin-top: 40px;
+  }
+
+  .item-produtos {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Responsividade geral */
+@media (max-width: 832px) {
+  .container-header {
+    align-items: center;
+    background: #040836;
+    color: #ffffff;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+  }
+
+  .container-header .titulo a {
+    color: white;
+    font-size: 35px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-align: center; /* Centraliza horizontalmente */
+  }
+
+  .container-header .titulo a span {
+    color: #2d00d1;
+    transition: all 0.3s ease;
+  }
+
+  .menu {
+    width: 100%;
+    height: 100vh;
+    background-color: #3f78d3;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 3.1rem;
+    left: 100%;
+    transition: all 1s;
+  }
+
+  .navBar i {
+    color: #ffffff;
+    position: relative;
+    top: 15px;
+    left: 720px;
+  }
+
+  .navBar i:hover {
+    color: #2d00d1;
+  }
+
+  .checkBtn {
+    display: flex;
+    color: #ffffff;
+    position: relative;
+    bottom: 50px;
+    right: 20px;
+    font-size: 1.5rem;
+  }
+
+  #check:checked ~ .menu {
+    left: 0%;
+  }
+}
