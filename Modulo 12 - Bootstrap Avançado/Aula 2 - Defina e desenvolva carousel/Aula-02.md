@@ -1,4 +1,4 @@
-## 📝 Aula 02: Carousel
+## 📝 Aula 02: Defina e desenvolva carousel
 
 Um carousel é um componente, geralmente utilizado para criar uma apresentação de slides rotativa, exibindo uma série de conteúdo, como imagens, textos ou vídeos.
 

@@ -1,4 +1,4 @@
-## 📝 Aula 01: Cards
+## 📝 Aula 01: Defina e desenvolva cards
 
 Um card é componente, geralmente utilizado para listagem de conteúdo.
 
