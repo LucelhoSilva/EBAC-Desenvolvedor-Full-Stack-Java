@@ -15,31 +15,31 @@ Você pode conferir a documentação oficial do componente:
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Carousel</title>
+    <title>Bootstrap - Carousel</title>
     <link rel="stylesheet" href="./lib/bootstrap.min.css" />
   </head>
 
   <body>
-    <div id="carousel-exemplo" class="carousel slide" data-bs-ride="carousel">
+    <section id="carousel-exemplo" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
-        <div data-bs-interval="3000" class="carousel-item active">
-          <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/01/30/18/56/island-7756423_1280.jpg" alt="Montanha" />
+        <article data-bs-interval="2500" class="carousel-item active">
+          <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/01/30/18/56/island-7756423_1280.jpg" alt="Imagem de uma montanha" />
           <div class="carousel-caption">
             <h2>Montanha</h2>
           </div>
-        </div>
-        <div data-bs-interval="3000" class="carousel-item">
-          <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/01/30/18/56/island-7756423_1280.jpg" alt="Montanha" />
+        </article>
+        <article data-bs-interval="2500" class="carousel-item">
+          <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/01/30/18/56/island-7756423_1280.jpg" alt="Imagem de uma montanha" />
           <div class="carousel-caption">
             <h2>Montanha</h2>
           </div>
-        </div>
-        <div data-bs-interval="3000" class="carousel-item">
-          <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/01/30/18/56/island-7756423_1280.jpg" alt="Montanha" />
+        </article>
+        <article data-bs-interval="2500" class="carousel-item">
+          <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/01/30/18/56/island-7756423_1280.jpg" alt="Imagem de uma montanha" />
           <div class="carousel-caption">
             <h2>Montanha</h2>
           </div>
-        </div>
+        </article>
       </div>
       <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
         <span class="carousel-control-prev-icon"></span>
@@ -47,12 +47,13 @@ Você pode conferir a documentação oficial do componente:
       <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
         <span class="carousel-control-next-icon"></span>
       </button>
+
       <ol class="carousel-indicators">
         <li data-bs-target="#carousel-exemplo" data-bs-slide-to="0" class="active"></li>
         <li data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></li>
         <li data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></li>
       </ol>
-    </div>
+    </section>
     <script src="./lib/bootstrap.bundle.min.js"></script>
   </body>
 </html>

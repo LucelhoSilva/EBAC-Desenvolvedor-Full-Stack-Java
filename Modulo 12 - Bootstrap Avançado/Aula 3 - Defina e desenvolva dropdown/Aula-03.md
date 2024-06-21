@@ -12,38 +12,34 @@ Você pode conferir a documentação oficial do componente:
 ```html
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap - Dropdown</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bootstrap - Dropdown</title>
-  <link rel="stylesheet" href="./lib/bootstrap.min.css">
-</head>
-
-<body>
-  <div class="container">
-    <div class="btn-group">
-      <button data-bs-toggle="dropdown" class="btn btn-primary">
-        Cadastrar
-      </button>
-      <button class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
-      <ul class="dropdown-menu dropdown-menu-dark">
-        <li class="dropdown-item">
-          <a href="#">Novo usuário</a>
-        </li>
-        <li class="dropdown-item">
-          <a href="#">Novo Fornecedor</a>
-        </li>
-        <li class="dropdown-item">
-          <a href="#">Novo funcionário</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <script src="./lib/bootstrap.bundle.min.js"></script>
-</body>
-
+  <body>
+    <main class="container">
+      <nav class="btn-group">
+        <button data-bs-toggle="dropdown" class="btn btn-primary">Cadastrar</button>
+        <button class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
+        <ul class="dropdown-menu dropdown-menu-dark">
+          <li>
+            <a class="dropdown-item" href="#">Novo usuário</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Novo Fornecedor</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Novo funcionário</a>
+          </li>
+        </ul>
+      </nav>
+    </main>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
 ```
 
