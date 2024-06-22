@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Bootstrap</title>
+  <link rel="stylesheet" href="./lib/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header id="cabecalho">
+    <div class="navbar navbar-expand-lg">
+      <div class="container">
+        <a href="https://elystech.com.br" target="_blank"><img src="./assets/img/Elys_lg_white.png" alt="Elys"
+            width="80px"></a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav class="collapse navbar-collapse justify-content-end" id="menu">
+          <ul class="navbar-nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link active" href="#carousel-exemplo">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#produtos">Produtos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#promocoes">Promoções</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contato">Contato</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Layout com Grid -->
+  <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+    <section id="carousel-exemplo" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <article data-bs-interval="2500" class="carousel-item active">
+          <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/01/30/18/56/island-7756423_1280.jpg"
+            alt="Imagem de uma montanha">
+          <div class="carousel-caption">
+            <h2>Montanha</h2>
+          </div>
+        </article>
+        <article data-bs-interval="2500" class="carousel-item">
+          <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/01/30/18/56/island-7756423_1280.jpg"
+            alt="Imagem de uma montanha">
+          <div class="carousel-caption">
+            <h2>Montanha</h2>
+          </div>
+        </article>
+        <article data-bs-interval="2500" class="carousel-item">
+          <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/01/30/18/56/island-7756423_1280.jpg"
+            alt="Imagem de uma montanha">
+          <div class="carousel-caption">
+            <h2>Montanha</h2>
+          </div>
+        </article>
+      </div>
+      <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+      <ol class="carousel-indicators">
+        <li data-bs-target="#carousel-exemplo" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></li>
+        <li data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></li>
+      </ol>
+    </section>
+
+    <section id="produtos">
+      <h2>Produtos</h2>
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card">
+              <img class="card-img-top" src="./assets/img/Pag advogado.png" alt="Imagem do Card">
+              <div class="card-body">
+                <h5 class="card-title">Site Institucional de Advocacia</h5>
+                <p class="card-text">Descrição do card 1.</p>
+                <a href="#" class="btn btn-primary">Saiba mais</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card">
+              <img class="card-img-top" src="./assets/img/Pag advogado2.png" alt="Imagem do Card">
+              <div class="card-body">
+                <h5 class="card-title">E-commerce de produtos cosmeticos</h5>
+                <p class="card-text">Descrição do card 2.</p>
+                <a href="#" class="btn btn-primary">Saiba mais</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card">
+              <img class="card-img-top" src="./assets/img/Pag advogado2.png" alt="Imagem do Card">
+              <div class="card-body">
+                <h5 class="card-title">Saas de Artes Marciais</h5>
+                <p class="card-text">Descrição do card 3.</p>
+                <a href="#" class="btn btn-primary">Saiba mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="promocoes">
+      <h2>Promoções</h2>
+      <div class="container">
+        <nav class="nav nav-tabs">
+          <button data-bs-toggle="tab" data-bs-target="#abaeletronico" class="nav-link active" type="button">Landing
+            Pages</button>
+          <button data-bs-toggle="tab" data-bs-target="#abamodamasculina" class="nav-link" type="button">Sites
+            Institucionais</button>
+          <button data-bs-toggle="tab" data-bs-target="#abamodafeminina" class="nav-link"
+            type="button">E-commerce</button>
+        </nav>
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="abaeletronico">
+            <div class="row">
+              <article class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card text-bg-dark">
+                  <img src="./assets/img/Elys_lg_completepurple.png" alt="Imagem de exemplo" class="img-fluid" />
+                  <div class="card-body">
+                    <h4 class="card-title">Título do Card</h4>
+                    <h5 class="card-subtitle">Subtítulo do Card</h5>
+                    <p class="card-text">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quasi, dicta rerum nostrum,
+                      officiis eos veritatis repudiandae fugit voluptatem mollitia distinctio quod hic maxime quidem?
+                      Neque, aspernatur! Magni, ut iure!
+                    </p>
+                    <a href="#" class="btn btn-primary">Botão link</a>
+                  </div>
+                </div>
+              </article>
+              <article class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card text-bg-dark">
+                  <img src="./assets/img/Elys_lg_completepurple.png" alt="Imagem de exemplo" class="img-fluid" />
+                  <div class="card-body">
+                    <h4 class="card-title">Título do Card</h4>
+                    <h5 class="card-subtitle">Subtítulo do Card</h5>
+                    <p class="card-text">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quasi, dicta rerum nostrum,
+                      officiis eos veritatis repudiandae fugit voluptatem mollitia distinctio quod hic maxime quidem?
+                      Neque, aspernatur! Magni, ut iure!
+                    </p>
+                    <a href="#" class="btn btn-primary">Botão link</a>
+                  </div>
+                </div>
+              </article>
+              <article class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card text-bg-dark">
+                  <img src="./assets/img/Elys_lg_completepurple.png" alt="Imagem de exemplo" class="img-fluid" />
+                  <div class="card-body">
+                    <h4 class="card-title">Título do Card</h4>
+                    <h5 class="card-subtitle">Subtítulo do Card</h5>
+                    <p class="card-text">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quasi, dicta rerum nostrum,
+                      officiis eos veritatis repudiandae fugit voluptatem mollitia distinctio quod hic maxime quidem?
+                      Neque, aspernatur! Magni, ut iure!
+                    </p>
+                    <a href="#" class="btn btn-primary">Botão link</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="abamodamasculina">
+            <div class="row">
+              <article class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card text-bg-dark">
+                  <img src="./assets/img/Elys_lg_completepurple.png" alt="Imagem de exemplo" class="img-fluid" />
+                  <div class="card-body">
+                    <h4 class="card-title">Título do Card</h4>
+                    <h5 class="card-subtitle">Subtítulo do Card</h5>
+                    <p class="card-text">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quasi, dicta rerum nostrum,
+                      officiis eos veritatis repudiandae fugit voluptatem mollitia distinctio quod hic maxime quidem?
+                      Neque, aspernatur! Magni, ut iure!
+                    </p>
+                    <a href="#" class="btn btn-primary">Botão link</a>
+                  </div>
+                </div>
+              </article>
+              <article class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card text-bg-dark">
+                  <img src="./assets/img/Elys_lg_completepurple.png" alt="Imagem de exemplo" class="img-fluid" />
+                  <div class="card-body">
+                    <h4 class="card-title">Título do Card</h4>
+                    <h5 class="card-subtitle">Subtítulo do Card</h5>
+                    <p class="card-text">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quasi, dicta rerum nostrum,
+                      officiis eos veritatis repudiandae fugit voluptatem mollitia distinctio quod hic maxime quidem?
+                      Neque, aspernatur! Magni, ut iure!
+                    </p>
+                    <a href="#" class="btn btn-primary">Botão link</a>
+                  </div>
+                </div>
+              </article>
+              <article class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card text-bg-dark">
+                  <img src="./assets/img/Elys_lg_completepurple.png" alt="Imagem de exemplo" class="img-fluid" />
+                  <div class="card-body">
+                    <h4 class="card-title">Título do Card</h4>
+                    <h5 class="card-subtitle">Subtítulo do Card</h5>
+                    <p class="card-text">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quasi, dicta rerum nostrum,
+                      officiis eos veritatis repudiandae fugit voluptatem mollitia distinctio quod hic maxime quidem?
+                      Neque, aspernatur! Magni, ut iure!
+                    </p>
+                    <a href="#" class="btn btn-primary">Botão link</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="abamodafeminina">
+            <div class="row">
+              <article class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card text-bg-dark">
+                  <img src="./assets/img/Elys_lg_completepurple.png" alt="Imagem de exemplo" class="img-fluid" />
+                  <div class="card-body">
+                    <h4 class="card-title">Título do Card</h4>
+                    <h5 class="card-subtitle">Subtítulo do Card</h5>
+                    <p class="card-text">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quasi, dicta rerum nostrum,
+                      officiis eos veritatis repudiandae fugit voluptatem mollitia distinctio quod hic maxime quidem?
+                      Neque, aspernatur! Magni, ut iure!
+                    </p>
+                    <a href="#" class="btn btn-primary">Botão link</a>
+                  </div>
+                </div>
+              </article>
+              <article class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card text-bg-dark">
+                  <img src="./assets/img/Elys_lg_completepurple.png" alt="Imagem de exemplo" class="img-fluid" />
+                  <div class="card-body">
+                    <h4 class="card-title">Título do Card</h4>
+                    <h5 class="card-subtitle">Subtítulo do Card</h5>
+                    <p class="card-text">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quasi, dicta rerum nostrum,
+                      officiis eos veritatis repudiandae fugit voluptatem mollitia distinctio quod hic maxime quidem?
+                      Neque, aspernatur! Magni, ut iure!
+                    </p>
+                    <a href="#" class="btn btn-primary">Botão link</a>
+                  </div>
+                </div>
+              </article>
+              <article class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card text-bg-dark">
+                  <img src="./assets/img/Elys_lg_completepurple.png" alt="Imagem de exemplo" class="img-fluid" />
+                  <div class="card-body">
+                    <h4 class="card-title">Título do Card</h4>
+                    <h5 class="card-subtitle">Subtítulo do Card</h5>
+                    <p class="card-text">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quasi, dicta rerum nostrum,
+                      officiis eos veritatis repudiandae fugit voluptatem mollitia distinctio quod hic maxime quidem?
+                      Neque, aspernatur! Magni, ut iure!
+                    </p>
+                    <a href="#" class="btn btn-primary">Botão link</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contato" class="container mt-4">
+      <h2>Contato</h2>
+      <form class="row">
+        <div class="mb-3 col-md-6">
+          <label for="nome" class="form-label">Nome</label>
+          <input type="text" id="nome" class="form-control">
+        </div>
+        <div class="mb-3 col-md-6">
+          <label for="email" class="form-label">E-mail</label>
+          <input type="email" id="email" class="form-control">
+        </div>
+        <div class="mb-3 col-md-6">
+          <label for="telefone" class="form-label">Telefone</label>
+          <input type="tel" id="telefone" class="form-control">
+        </div>
+        <div class="mb-3 col-md-6">
+          <label for="cidade" class="form-label">Cidade</label>
+          <input type="text" id="cidade" class="form-control">
+        </div>
+        <div class="mb-3 col-12">
+          <label for="mensagem" class="form-label">Mensagem</label>
+          <textarea id="mensagem" class="form-control" rows="4"></textarea>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </form>
+    </footer>
+  </div>
+
+  <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
