@@ -1,0 +1,26 @@
+[
+  {
+    "imagem": "./assets/img/tenisAdidas.webp",
+    "alt": "Tênis, marca: Adidas, cor: preto e com o logo branco",
+    "titulo": "Tênis Adidas",
+    "descricao": "Tênis Adidas, disponível nos tamanhos: 37, 38, 39 e 40"
+  },
+  {
+    "imagem": "./assets/img/TenisNike.avif",
+    "alt": "Tênis, marca: Nike, cor: preto com o logo branco",
+    "titulo": "Tênis Nike",
+    "descricao": "Tênis Nike, disponível nos tamanhos: 35, 37, 38 e 40"
+  },
+  {
+    "imagem": "./assets/img/tenisVans.jpeg",
+    "alt": "Tênis, marca Vans, cor: preta com risco branco ao lado",
+    "titulo": "Tênis Vans",
+    "descricao": "Tênis Vans, disponível nos tamanhos: 36, 37, 38, 41"
+  },
+  {
+    "imagem": "./assets/img/tenisVans.jpeg",
+    "alt": "Tênis, marca Vans, cor: preta com risco branco ao lado",
+    "titulo": "Tênis Vans",
+    "descricao": "Tênis Vans infantil, disponível nos tamanhos: 36 ao 39"
+  }
+]
