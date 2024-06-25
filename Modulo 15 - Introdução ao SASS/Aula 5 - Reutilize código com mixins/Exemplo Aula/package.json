@@ -1,0 +1,15 @@
+{
+  "name": "aula-2---aprenda-a-sintaxa-de-sass-e-scss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass source/main.scss biuld/main.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.77.6"
+  }
+}
