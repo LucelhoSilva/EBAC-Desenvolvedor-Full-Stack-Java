@@ -6,7 +6,7 @@ module.exports = function (grunt) {
     less: {
       development: {
         files: {
-          'main.css': 'main.less'
+          './dev/styles/main.css': 'src/styles/main.less'
         }
       },
       production: {
@@ -14,40 +14,17 @@ module.exports = function (grunt) {
           compress: true,
         },
         files: {
-          'main.min.css': 'main.less'
+          'dist/styles/main.min.css': 'src/styles/main.less'
         }
       },
     },
 
-    sass: {
-      dist: {
-        options: {
-          style: 'compressed' // compact, compressed, expanded, nested
-        },
-        files: {
-          'main2.css': 'main.scss'
-        }
-      },
-    },
-
-    concurrent: {
-      target: ['olaGrunt','less','sass']
-    }
   });
 
-  grunt.registerTask('olaGrunt', function () {
-    const done = this.async(); // ele aguarda o processo terminar com isso !
-    setTimeout(function () {
-      console.log('Olá, Grunt!');
-      done();
-     }, 3000); // para testar uma função mais demorada (ele nao espera o setTimeout terminar)
-  });
 
   grunt.loadNpmTasks('grunt-contrib-less'); // carrega o plugin less
-  grunt.loadNpmTasks('grunt-contrib-sass'); // carrega o plugin sass
-  grunt.loadNpmTasks('grunt-concurrent'); // carrega o plugin para executa em paralelo
-
-  grunt.registerTask('default', ['concurrent']); // com o array eu posso passar o nome de todas as funções (tarefas), que ele pode executar
+  grunt.registerTask('default', ['less:development']);
+  grunt.registerTask('build', ['less:production']);
 }
 
 
