@@ -1,7 +1,7 @@
 {
-  "name": "use-grunt-para-compilar-less",
+  "name": "inicie-um-projeto-com-o-grunt",
   "version": "1.0.0",
-  "description": "Aprenda a usar grunt para compilar LESS e SASS e minificar o css",
+  "description": "Aprenda a iniciar um projeto com o grunt",
   "main": "index.js",
   "scripts": {
     "grunt": "grunt",
@@ -11,6 +11,7 @@
   "license": "ISC",
   "devDependencies": {
     "grunt": "^1.6.1",
+    "grunt-concurrent": "^3.0.0",
     "grunt-contrib-less": "^3.0.0",
     "grunt-contrib-sass": "^2.0.0"
   }
