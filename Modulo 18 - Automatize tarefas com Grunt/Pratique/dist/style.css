@@ -1,0 +1,10 @@
+body {
+  background-color: red;
+}
+body span {
+  color: blue;
+}
+body span h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
