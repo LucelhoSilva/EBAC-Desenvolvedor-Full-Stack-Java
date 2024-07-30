@@ -1,4 +1,4 @@
-## Aula 09: Comprima JavaScript com Grunt
+## 📝 Aula 09: Comprima JavaScript com Grunt
 
 Nesta aula, vamos aprender a comprimir arquivos JavaScript usando o Grunt. Isso ajuda a reduzir o tamanho dos arquivos e a melhorar o tempo de carregamento do site. Também veremos como configurar o Vercel para fazer o deploy do projeto.
 
