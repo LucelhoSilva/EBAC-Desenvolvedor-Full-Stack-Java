@@ -8,10 +8,12 @@
   <link rel="stylesheet" href="./smacss/base.css">
   <link rel="stylesheet" href="./smacss/layout.css">
   <link rel="stylesheet" href="./smacss/module.css">
+  <link rel="stylesheet" href="./smacss/tema-a.css">
+  <link rel="stylesheet" href="./smacss/tema-b.css">
 </head>
 
-<body>
-  <header>
+<body class="tema-a">
+  <div id="header">
     <div class="container">
       <h1 class="title">Nome do site</h1>
       <nav>
@@ -28,7 +30,7 @@
         </ul>
       </nav>
     </div>
-  </header>
+  </div>
 
   <div class="container">
     <div class="accordion">
@@ -52,6 +54,20 @@
     </div>
   </footer>
 
+
+  <script>
+    const accordions = document.querySelectorAll('.accordion-header');
+    for (let i = 0; i < accordions.length; i++) {
+      accordions[i].addEventListener('click', function (evento) {
+        if (evento.target.parentNode.classList.contains('is_open')) {
+          evento.target.parentNode.classList.remove('is_open');
+
+        } else {
+          evento.target.parentNode.classList.add('is_open');
+        }
+      });
+    }
+  </script>
 </body>
 
 </html>

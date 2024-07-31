@@ -4,13 +4,13 @@
   margin: 0 auto;
 }
 
-header > .container {
+#header > .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-header li {
+#header li {
   display: inline;
   margin-left: 8px;
 }
