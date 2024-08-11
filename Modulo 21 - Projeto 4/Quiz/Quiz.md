@@ -2,8 +2,6 @@
 
 > Módulo 21: Projeto 4
 
-<br>
-
 ### Pergunta 1
 
 #### Qual função do Gulp utilizamos para fazer com que o Gulp acompanhe as mudanças nos arquivos?
