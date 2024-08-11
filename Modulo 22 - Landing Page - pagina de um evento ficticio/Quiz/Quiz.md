@@ -110,7 +110,7 @@ D- .getTime()
 
 <details>
     <summary>Resposta</summary>
-    
+
     .getTime()
 
     A alternativa correta é a opção ".getTime()". Para recuperar o timestamp de uma data em JavaScript, você pode utilizar o método ".getTime()" de um objeto do tipo Date. O método ".getTime()" retorna o valor numérico representando o número de milissegundos desde 1º de janeiro de 1970 (Epoch/Unix) até a data especificada.
