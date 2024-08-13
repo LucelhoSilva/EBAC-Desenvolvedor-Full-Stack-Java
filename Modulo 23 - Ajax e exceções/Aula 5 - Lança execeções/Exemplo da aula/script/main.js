@@ -51,19 +51,10 @@ $(document).ready(function() {
     .catch(function(error) {
         alert('Erro ao buscar CEP');
     })
-    .finally(function() {  // finally é executado independente de erro ou sucesso
+    .finally(function() {
         setTimeout(function() {
             $(botao).find('i').removeClass('d-none');
             $(botao).find('span').addClass('d-none');
         }, 1000)
     })
-
-    $('#formulario-pedido').submit(function(evento) {
-        evento.preventDefault();
-        
-        if($('#nome').val().length == 0) {
-            throw new Error('Digite o nome'); // força o erro (throw significa lançar)
-        }
-    })
-
 })
