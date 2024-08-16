@@ -1,88 +1,52 @@
-// Classe Concecionaria
-function Concecionaria(nome, endereco) {
-  this.nome = nome;
-  this.endereco = endereco;
-  this.funcionarios = [];
-  this.carros = [];
-}
-
-// Métodos da classe Concecionaria
-Concecionaria.prototype.adicionarFuncionario = function(funcionario) {
-  this.funcionarios.push(funcionario);
-}
-
-Concecionaria.prototype.adicionarCarro = function(carro) {
-  this.carros.push(carro);
-}
-
-Concecionaria.prototype.listarCarros = function() {
-  console.log(`Carros disponíveis na ${this.nome}:`);
-  this.carros.forEach(carro => {
-    console.log(`${carro.marca} ${carro.modelo} (${carro.ano}) - R$${carro.getPreco()}`);
-  });
-}
-
-// Classe Funcionario
-function Funcionario(nome, endereco, cargo, comissao) {
-  this.nome = nome;
-  this.endereco = endereco;
-  this.cargo = cargo;
-  let _comissao = comissao;
-  let _totalComissao = 0;
-
-  this.getComissao = function() {
-    return _comissao;
-  }
-
-  this.getTotalComissao = function() {
-    return _totalComissao;
-  }
-
-  this.venderCarro = function(carro) {
-    const valorComissao = carro.getPreco() * (_comissao / 100);
-    _totalComissao += valorComissao;
-    console.log(`${this.nome} vendeu o carro ${carro.modelo} da marca ${carro.marca} e ganhou R$${valorComissao.toFixed(2)} de comissão.`);
-  }
-}
-
-// Classe Carro
-function Carro(nome, endereco, modelo, marca, ano, preco) {
-  this.nome = nome;
-  this.endereco = endereco;
-  this.modelo = modelo;
-  this.marca = marca;
-  this.ano = ano;
-  let _preco = preco;
-
-  this.getPreco = function() {
-    return _preco;
-  }
-
-  this.setPreco = function(valor) {
-    if (typeof valor === 'number') {
-      _preco = valor;
+class Pessoa {
+    constructor(nome, idade) {
+        if (this.constructor === Pessoa) {
+            throw new Error("Pessoa é uma classe abstrata e não pode ser instanciada diretamente.");
+        }
+        this.nome = nome;
+        this.idade = idade;
     }
-  }
+
+    apresentar() {
+        console.log(`Olá, meu nome é ${this.nome} e tenho ${this.idade} anos.`);
+    }
 }
 
-// Instâncias
-const concecionariaX = new Concecionaria("Concecionária X", "Av. Principal, 123");
-const funcionario1 = new Funcionario("João", "Av. Principal, 123", "Vendedor", 5); // Comissão de 5%
-const carro1 = new Carro("Concecionária X", "Av. Principal, 123", "Civic", "Honda", 2023, 120000);
-const carro2 = new Carro("Concecionária X", "Av. Principal, 123", "Corolla", "Toyota", 2023, 130000);
-const carro3 = new Carro("Concecionária X", "Av. Principal, 123", "Golf", "Volkswagen", 2023, 110000);
+// Classe Estudante, herdeira de Pessoa.
+class Estudante extends Pessoa {
+    constructor(nome, idade, curso) {
+        super(nome, idade);
+        this.curso = curso;
+    }
 
-// Adiciona funcionários e carros à concessionária
-concecionariaX.adicionarFuncionario(funcionario1);
-concecionariaX.adicionarCarro(carro1);
-concecionariaX.adicionarCarro(carro2);
-concecionariaX.adicionarCarro(carro3);
+    estudar() {
+        console.log(`${this.nome} está estudando ${this.curso}.`);
+    }
+}
 
-// Ações
-concecionariaX.listarCarros();
-funcionario1.venderCarro(carro1);
-funcionario1.venderCarro(carro2);
-funcionario1.venderCarro(carro3);
+// Classe Professor, herdeira de Pessoa.
+class Professor extends Pessoa {
+    constructor(nome, idade, disciplina) {
+        super(nome, idade);
+        this.disciplina = disciplina;
+    }
 
-// Exibe o total de comissão do funcionário
-console.log(`Total de comissão de ${funcionario1.nome}: R$${funcionario1.getTotalComissao().toFixed(2)}`);
+    ensinar() {
+        console.log(`${this.nome} está ensinando ${this.disciplina}.`);
+    }
+}
+
+// Criação de instâncias de objetos.
+const estudante1 = new Estudante("Maria", 20, "Engenharia");
+const professor1 = new Professor("João", 35, "Matemática");
+const estudante2 = new Estudante("Carlos", 22, "Ciências da Computação");
+
+// Chamada de métodos.
+estudante1.apresentar(); 
+estudante1.estudar(); 
+
+professor1.apresentar(); 
+professor1.ensinar(); 
+
+estudante2.apresentar(); 
+estudante2.estudar();
