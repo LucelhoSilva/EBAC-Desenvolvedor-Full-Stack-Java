@@ -22,3 +22,7 @@ dadosDaApi = 10
 dadosDaApi = "dez"
 dadosDaApi = true
 dadosDaApi = [10, "dez", true]
+
+let curso = "Front-end" // tipagem implícita
+
+let curso2: string = "Front-end" // tipagem explícita
