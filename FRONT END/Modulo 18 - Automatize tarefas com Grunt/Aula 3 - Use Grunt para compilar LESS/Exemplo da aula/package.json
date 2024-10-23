@@ -1,0 +1,17 @@
+{
+  "name": "use-grunt-para-compilar-less",
+  "version": "1.0.0",
+  "description": "Aprenda a usar grunt para compilar LESS e SASS e minificar o css",
+  "main": "index.js",
+  "scripts": {
+    "grunt": "grunt",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lucelho Silva",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.6.1",
+    "grunt-contrib-less": "^3.0.0",
+    "grunt-contrib-sass": "^2.0.0"
+  }
+}

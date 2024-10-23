@@ -1,0 +1,130 @@
+@use "configs/variables.scss";
+@use "configs/mixins.scss";
+@use "configs/fonts.scss";
+@use "hero";
+@use "shows";
+@use "plans";
+@use "available-devices";
+@use "faq";
+@use "footer";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Avenir, sans-serif;
+}
+
+body {
+  background-color: variables.$bg-primary-color;
+}
+
+.text--big {
+  @include mixins.text(1.125rem); //18px
+}
+
+.text {
+  @include mixins.text; //16px
+}
+
+.text--small {
+  @include mixins.text(0.75rem); // 12px
+}
+
+.link-text {
+  @include mixins.text(1.125rem);
+  text-decoration: underline;
+  color: variables.$text-second-color;
+}
+
+.title--big {
+  @include mixins.title(2.75rem); //44px
+}
+
+.title {
+  @include mixins.title; //40px
+}
+
+.title--small {
+  @include mixins.title(1.75rem); //28px
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 3.75rem;
+  font-size: 1.125rem;
+  color: variables.$text-second-color;
+  background-color: variables.$btn-primary-color;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  padding: 0.5rem 0.875rem;
+  border: 1px solid variables.$btn-primary-color;
+
+  &:hover {
+    background-color: lighten(variables.$btn-primary-color, 3%);
+  }
+
+  &--second {
+    background-color: variables.$btn-second-color;
+    border-color: variables.$btn-second-color;
+
+    &:hover {
+      background-color: lighten(variables.$btn-second-color, 3%);
+    }
+  }
+
+  &--dark {
+    background-color: variables.$btn-dark-color;
+    border-color: variables.$text-second-color;
+
+    &:hover {
+      background-color: variables.$text-second-color;
+      color: variables.$bg-primary-color;
+    }
+  }
+}
+
+.image-text-section {
+  padding: 5.6vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+
+  img {
+    max-width: 100%;
+  }
+
+  &__text-container {
+    padding: 0 2vw;
+
+    h2 {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &--image-full-width {
+    display: block;
+    position: relative;
+
+    img {
+      width: 100%;
+    }
+
+    &__text-container {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: calc(50% - 5.6vw);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}

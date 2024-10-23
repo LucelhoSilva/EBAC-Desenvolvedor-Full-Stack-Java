@@ -1,0 +1,19 @@
+{
+  "name": "criando-o-hero",
+  "version": "1.0.0",
+  "description": "Nessa aula vamos iniciar a criação do hero",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp watch",
+    "build": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lucelho Silva",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.77.8"
+  }
+}

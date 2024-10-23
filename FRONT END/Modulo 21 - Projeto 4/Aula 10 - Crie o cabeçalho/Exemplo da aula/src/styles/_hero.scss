@@ -1,0 +1,48 @@
+@use "./configs/variables.scss";
+
+.hero {
+  padding: 5.6vw;
+  min-height: 90vh;
+  background-image: url(../images/hero_desktop.jpeg);
+  text-align: center;
+  background-size: cover;
+
+  .button {
+    margin-top: 2vw;
+    margin-bottom: 0.5rem;
+  }
+
+  &__content {
+    max-width: 640px;
+
+    &__branding {
+      max-width: 320px;
+      margin: 0 auto 2.375rem;
+    }
+
+    .title--small {
+      margin-bottom: 4rem;
+    }
+
+    p {
+      margin-bottom: 1.25rem;
+
+      &:last-child {
+        margin-top: 3.75rem;
+      }
+    }
+
+    &__combos {
+      display: flex;
+      justify-content: space-between;
+
+      &__combo {
+        width: calc(50% - 0.75rem);
+
+        img {
+          max-height: 3.75rem;
+        }
+      }
+    }
+  }
+}

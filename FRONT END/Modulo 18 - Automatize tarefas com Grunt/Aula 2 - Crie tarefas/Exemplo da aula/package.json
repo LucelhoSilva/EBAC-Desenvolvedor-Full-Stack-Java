@@ -1,0 +1,15 @@
+{
+  "name": "crie-tarefas",
+  "version": "1.0.0",
+  "description": "Crie tarefas com grunt",
+  "main": "index.js",
+  "scripts": {
+    "grunt": "grunt",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lucelho Silva",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.6.1"
+  }
+}

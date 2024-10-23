@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clone Disney+</title>
+  <link rel="stylesheet" href="./dist/css/main.css">
+</head>
+
+<body>
+  <!-- Banner do site -->
+  <section class="hero">
+    <div class="hero__content">
+      <h1 class="hero__content__branding">
+        <img src="./dist/images/disneyplus.svg" alt="Disney+">
+      </h1>
+      <h3 class="title--small">
+        As melhores histórias, tudo em um só lugar.
+      </h3>
+      <p>
+        <a href="#" class="link-text">Assinar o Disney+</a>
+        <br>
+        <span class="text">R$ 27,90/mês ou R 279,90/ano à vista*</span>
+      </p>
+      <ul class="hero__content__combos">
+        <li class="hero__content__combos__combo">
+          <img src="./dist/images/logos/disney_star_plus.png" alt="Disney+ - Strar+ - Combo+">
+          <button class="button" type="button">Assine Agora</button>
+          <span class="text">R$ 45,90/mês*</span>
+        </li>
+        <li class="hero__content__combos__combo">
+          <img src="./dist/images/logos/disney_star_plus_starzplay.png" alt="Disney+ - Strar+ - Combo+">
+          <button class="button" type="button">Assine Agora</button>
+          <span class="text">R$ 55,90/mês*</span>
+        </li>
+      </ul>
+      <p class="text--small">
+        *O preço pode variar caso a assinatura seja feita através de outras plataformas.
+      </p>
+    </div>
+  </section>
+
+  <!-- Seção de planos -->
+  <section class="shows">
+    <nav class="shows__tabs">
+      <button data-tab-button="em_breve" class="shows__tabs__button shows__tabs__button--is-active">Em breve</button>
+      <button data-tab-button="populares" class="shows__tabs__button">Mais populares</button>
+      <button data-tab-button="star_plus" class="shows__tabs__button">Mais no Star+</button>
+    </nav>
+    <ul data-tab-id="em_breve" class="shows__list shows__list--is-active">
+      <li class="shows__list__item">
+        <img src="./dist/images/em_breve/spidey.jpg" alt="Spidey">
+      </li>
+      <li class="shows__list__item">
+        <img src="./dist/images/em_breve/desencantada.jpg" alt="desencantada">
+      </li>
+      <li class="shows__list__item">
+        <img src="./dist/images/em_breve/lobisomem.jpg" alt="lobisomem">
+      </li>
+      <li class="shows__list__item">
+        <img src="./dist/images/em_breve/sem_limites.jpg" alt="sem_limites">
+      </li>
+      <li class="shows__list__item">
+        <img src="./dist/images/em_breve/willow.jpg" alt="willow">
+      </li>
+      <li class="shows__list__item">
+        <img src="./dist/images/em_breve/the_santa_clauses.jpg" alt="the_santa_clauses">
+      </li>
+    </ul>
+    <ul data-tab-id="populares" class="shows__list">
+      <li class="shows__list__item">
+        <img src="./dist/images/mais_populares/obi_wan.jpg" alt="obi_wan">
+      </li>
+      <li class="shows__list__item">
+        <img src="./dist/images/mais_populares/bluey.jpg" alt="bluey">
+      </li>
+      <li class="shows__list__item">
+        <img src="./dist/images/mais_populares/cavaleira_da_lua.jpg" alt="cavaleira_da_lua">
+      </li>
+      <li class="shows__list__item">
+        <img src="./dist/images/mais_populares/o_incrivel_dr_pol.jpg" alt="o_incrivel_dr_pol">
+      </li>
+      <li class="shows__list__item">
+        <img src="./dist/images/mais_populares/red.jpg" alt="red">
+      </li>
+      <li class="shows__list__item">
+        <img src="./dist/images/mais_populares/tudo_igual_sqn.jpg" alt="tudo_igual_sqn">
+      </li>
+    </ul>
+    <ul data-tab-id="star_plus" class="shows__list">
+      <li class="shows__list__item">
+        <img src="./dist/images/mais_no_star_plus/libertadores.jpg" alt="libertadores">
+      </li>
+      <li class="shows__list__item">
+        <img src="./dist/images/mais_no_star_plus/belair.jpg" alt="belair">
+      </li>
+      <li class="shows__list__item">
+        <img src="./dist/images/mais_no_star_plus/nba.jpg" alt="nba">
+      </li>
+      <li class="shows__list__item">
+        <img src="./dist/images/mais_no_star_plus/os_simpson.jpg" alt="os_simpson">
+      </li>
+      <li class="shows__list__item">
+        <img src="./dist/images/mais_no_star_plus/premier_league.jpg" alt="premier_league">
+      </li>
+      <li class="shows__list__item">
+        <img src="./dist/images/mais_no_star_plus/the_kardashians.jpg" alt="the_kardashians">
+      </li>
+    </ul>
+  </section>
+  <script src="./scripts/main.js"></script>
+</body>
+
+</html>

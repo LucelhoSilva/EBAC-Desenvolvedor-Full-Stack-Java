@@ -1,0 +1,15 @@
+{
+  "name": "escreva-bem-com-sass",
+  "version": "1.0.0",
+  "description": "Aprenda a usar a metodologia BEM para escrever com SASS",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lucelho Silva",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.77.8"
+  }
+}

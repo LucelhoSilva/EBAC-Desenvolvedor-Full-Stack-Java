@@ -1,0 +1,19 @@
+{
+  "name": "inicie-um-projeto-com-o-grunt",
+  "version": "1.0.0",
+  "description": "Aprenda a iniciar um projeto com o grunt",
+  "main": "index.js",
+  "scripts": {
+    "grunt": "grunt",
+    "build": "grunt build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lucelho Silva",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.6.1",
+    "grunt-concurrent": "^3.0.0",
+    "grunt-contrib-less": "^3.0.0",
+    "grunt-contrib-sass": "^2.0.0"
+  }
+}

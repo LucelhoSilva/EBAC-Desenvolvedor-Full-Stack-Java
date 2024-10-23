@@ -1,0 +1,16 @@
+{
+  "name": "pratique",
+  "version": "1.0.0",
+  "description": "exercicio da ebac para treinar os conhecimentos com grunt",
+  "main": "gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lucelho Silva",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.6.1",
+    "grunt-contrib-less": "^3.0.0",
+    "grunt-contrib-uglify": "^5.2.2"
+  }
+}

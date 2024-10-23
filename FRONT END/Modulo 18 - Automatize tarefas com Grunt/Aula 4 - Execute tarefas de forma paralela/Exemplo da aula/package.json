@@ -1,0 +1,18 @@
+{
+  "name": "execute-tarefas-de-forma-paralela",
+  "version": "1.0.0",
+  "description": "Aprenda a executar tarefas de maneira paralela e minificar o js com grunt",
+  "main": "index.js",
+  "scripts": {
+    "grunt": "grunt",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lucelho Silva",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.6.1",
+    "grunt-concurrent": "^3.0.0",
+    "grunt-contrib-less": "^3.0.0",
+    "grunt-contrib-sass": "^2.0.0"
+  }
+}
