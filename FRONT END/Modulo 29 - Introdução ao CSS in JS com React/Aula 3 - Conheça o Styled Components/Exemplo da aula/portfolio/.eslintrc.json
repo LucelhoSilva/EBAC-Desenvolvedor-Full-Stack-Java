@@ -1,0 +1,31 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint", "react", "react-hooks"], // reconhece os plugins
+  "rules": {
+    "react-hooks/rules-of-hooks": "error", // para apontar erros
+    "react-hooks/exhaustive-deps": "warn", // Algum problema nas depencias ele vai tratar como alertas
+    "react/prop-types": "off", // Desabilita a verificação de tipos
+    "react/react-in-jsx-scope": "off", // Desabilita a verificação de tipos
+    "@typescript-eslint/explicit-module-boundary-types": "off" // Nao precisa fica explicitando o tipo de retorno da função
+  },
+  "settings": {
+    "react": {
+      "version": "detect" // Detecta a versão do react
+    }
+  }
+}
