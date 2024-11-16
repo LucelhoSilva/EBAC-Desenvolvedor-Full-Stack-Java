@@ -1,0 +1,9 @@
+root = true # informa que essa configuracao mais importante é a configuracao principal desse projeto, em questao de estilo de codigo
+
+[*] # significa que essa configuracao se aplica a todos os arquivos
+indent_style = space # estilo de identacao que vamos esta usando é com espaco
+ident_size = 2  # tamanho da identacao é 2 espacos
+end_of_line = lf # para o windows é o CRLF, para o linux é o LF e para o mac é o CR, normalmente usamos o LF
+charset = utf-8 # charset que vamos usar é o utf-8 (formato de codificacao de caracteres)
+trim_trailing_whitespace = true # Obriga a colocar espaço depois de simbolos
+insert_final_newline = true # Obriga a colocar uma nova linha no final do arquivo
